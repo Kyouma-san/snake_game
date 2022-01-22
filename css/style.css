@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
 }
 
 .body{
+    display: flex;
+    flex-direction: column;
     background: url("../bit.jpg");
     min-height: 100vh;
     background-size: cover;
@@ -11,6 +16,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Recursive', sans-serif;
+    color: whitesmoke;
+}
+h1{
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Recursive', sans-serif;
+    color: whitesmoke;
 }
 
 #board{

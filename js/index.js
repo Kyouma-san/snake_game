@@ -22,13 +22,13 @@ function main(ctime) {
 
 function isCollide(snakeArr) {
     //if snake collide with it's own body
-    for(let i = 1; i < snakeArr.length ; i++){
-        if(snakeArr[i].x === snakeArr[0].x && snakeArr[i].y === snakeArr[0].y){
+    for (let i = 1; i < snakeArr.length; i++) {
+        if (snakeArr[i].x === snakeArr[0].x && snakeArr[i].y === snakeArr[0].y) {
             return true;
         }
     }
     //bumping into wall
-    if(snakeArr[0].x >= 18 || snakeArr[0].x <= 0 || snakeArr[0].y >= 18 || snakeArr[0].y <= 0){
+    if (snakeArr[0].x >= 18 || snakeArr[0].x <= 0 || snakeArr[0].y >= 18 || snakeArr[0].y <= 0) {
         return true;
     }
     return false;
@@ -43,20 +43,23 @@ function gameEngine() {
             { x: 13, y: 15 }    //resetting snake array
         ]
         score = 0;
+
     }
 
 
     //after consuming the food --> increase the snake body and regenerate the food
     if (snakeArr[0].y === food.y && snakeArr[0].x === food.x) {
         snakeArr.unshift({ x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y })
+        score += 1;
+        scoreBox.innerHTML = "Score: " + score;
         let a = 1;
         let b = 17;
         food = { x: Math.round(a + (b - a) * Math.random()), y: Math.round(a + (b - a) * Math.random()) }
     }
 
     //Moving the snake
-    for(let i = snakeArr.length -2 ; i >=0 ; i--){
-        snakeArr[i+1] = {...snakeArr[i]}  /// ... destructuring and creating a new obj 
+    for (let i = snakeArr.length - 2; i >= 0; i--) {
+        snakeArr[i + 1] = { ...snakeArr[i] }  /// ... destructuring and creating a new obj 
     }
 
     snakeArr[0].x += inputDir.x;
