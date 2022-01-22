@@ -43,6 +43,7 @@ function gameEngine() {
             { x: 13, y: 15 }    //resetting snake array
         ]
         score = 0;
+        location.reload();
 
     }
 
