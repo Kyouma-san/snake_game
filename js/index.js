@@ -1,6 +1,6 @@
 //game constants
 let inputDir = { x: 0, y: 0 };
-let speed = 2;
+let speed = 8;
 let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [
@@ -20,7 +20,17 @@ function main(ctime) {
     gameEngine();
 }
 
-function isCollide(sarr) {
+function isCollide(snakeArr) {
+    //if snake collide with it's own body
+    for(let i = 1; i < snakeArr.length ; i++){
+        if(snakeArr[i].x === snakeArr[0].x && snakeArr[i].y === snakeArr[0].y){
+            return true;
+        }
+    }
+    //bumping into wall
+    if(snakeArr[0].x >= 18 || snakeArr[0].x <= 0 || snakeArr[0].y >= 18 || snakeArr[0].y <= 0){
+        return true;
+    }
     return false;
 }
 
