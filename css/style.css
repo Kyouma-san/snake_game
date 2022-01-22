@@ -69,8 +69,8 @@ h1{
 }
 
 .food{
-    background: linear-gradient(rgb(87, 24, 45), rgb(158, 35, 76)); 
-    border: 2px solid rgb(179, 70, 70);
+    background: linear-gradient(rgb(87, 24, 45), rgb(141, 5, 50)); 
+    border: 2px solid rgb(112, 28, 28);
     border-radius: 25px;
 }
 
