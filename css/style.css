@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-#body{
+#main{
     display: flex;
     flex-direction: column;
     background: url("../bit.jpg");

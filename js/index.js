@@ -203,7 +203,7 @@ function swipedetect(el, callback){
 
 
 window.addEventListener('load', function(){
-    var el = document.getElementById('body')
+    var el = document.getElementById('main')
     
 
     swipedetect(el, function(swipedir){
@@ -211,25 +211,25 @@ window.addEventListener('load', function(){
             inputDir = { x: 0, y: -1 }  // Starting the game
 
             switch (swipedir) {
-                case "top":
+                case 'top':
                     console.log("ArrowUp")
                     inputDir.x = 0;
                     inputDir.y = -1;
                     break;
         
-                case "down":
+                case 'down':
                     console.log("ArrowDown")
                     inputDir.x = 0;
                     inputDir.y = 1;
                     break;
         
-                case "right":
+                case 'right':
                     console.log("ArrowRight")
                     inputDir.x = 1;
                     inputDir.y = 0;
                     break;
         
-                case "left":
+                case 'left':
                     console.log("ArrowLeft")
                     inputDir.x = -1;
                     inputDir.y = 0;
