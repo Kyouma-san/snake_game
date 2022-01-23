@@ -74,3 +74,13 @@ h1{
     border-radius: 25px;
 }
 
+
+
+@media only screen and (max-width:800px){
+    #main {
+       background: url("../bit2.jpg");
+    }
+    h1{
+        font-size: 25px;
+    }
+  }
