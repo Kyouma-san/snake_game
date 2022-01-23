@@ -34,6 +34,19 @@
     font-family: 'Recursive', sans-serif;
     color: whitesmoke;
     margin-bottom: 30px;
+    
+}
+
+
+.retry{
+    font-family: 'Recursive', sans-serif; 
+    font-size: 20px;
+    width: 146.883px;
+    height: 43px;
+    
+    visibility: hidden;
+    margin-bottom: 30px;
+   
 }
 
 h1{

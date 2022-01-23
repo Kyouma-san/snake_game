@@ -38,12 +38,11 @@ function gameEngine() {
     //updating snake array
     if (isCollide(snakeArr)) {
         inputDir = { x: 0, y: 0 }
-        alert("Game Over. Press any key to play again!")
-        snakeArr = [
-            { x: 13, y: 15 }    //resetting snake array
-        ]
-        score = 0;
-        location.reload();
+        alert("Game Over!!!")
+        retry = document.querySelector('.retry');
+        retry.style.visibility = 'visible';
+
+        
 
     }
 
@@ -211,7 +210,7 @@ window.addEventListener('load', function(){
             inputDir = { x: 0, y: -1 }  // Starting the game
 
             switch (swipedir) {
-                case 'top':
+                case 'up':
                     console.log("ArrowUp")
                     inputDir.x = 0;
                     inputDir.y = -1;
@@ -242,4 +241,13 @@ window.addEventListener('load', function(){
     })
 }, false)
 
+
+function reload(){
+    
+    snakeArr = [
+        { x: 13, y: 15 }    //resetting snake array
+    ]
+    score = 0;
+    location.reload();
+}
 
