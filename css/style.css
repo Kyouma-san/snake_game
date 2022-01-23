@@ -49,6 +49,13 @@
    
 }
 
+.gameOver{
+    font-size: 53px;
+    visibility: hidden;
+    text-align: center;
+    font-family: 'Recursive', sans-serif;
+}
+
 h1{
     font-size: 39px;
     font-weight: bold;

@@ -38,9 +38,10 @@ function gameEngine() {
     //updating snake array
     if (isCollide(snakeArr)) {
         inputDir = { x: 0, y: 0 }
-        alert("Game Over!!!")
+        gameOver = document.querySelector('.gameOver');
         retry = document.querySelector('.retry');
         retry.style.visibility = 'visible';
+        gameOver.style.visibility = 'visible';
 
         
 
