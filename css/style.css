@@ -43,6 +43,7 @@ h1{
     color: whitesmoke;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #board{
