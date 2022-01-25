@@ -14,7 +14,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
 }
 
@@ -50,6 +50,7 @@
 }
 
 .gameOver{
+    
     font-size: 53px;
     visibility: hidden;
     text-align: center;
@@ -98,10 +99,28 @@ h1{
 
 
 @media only screen and (max-width:800px){
+    h3{
+        font-size: 35px;
+        margin-top: 30px;
+       
+    }
     #main {
        background: url("../bit2.jpg");
     }
     h1{
         font-size: 25px;
+       
     }
+    #scoreBox{
+    
+        font-size: 30px;
+    }
+    
+    #highBox{
+        
+        font-size: 30px;
+        
+    }
+   
+    
   }
